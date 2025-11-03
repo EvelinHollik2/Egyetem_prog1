@@ -52,7 +52,7 @@ def primek_szama(lista:list) -> int:
 def main():
     lista=[]
     feltolt(lista)
-    print(lista)
+    print("A lista elemei: " ,lista)
     print("Legkisebb = ", legkisebb(lista))
     print("Legnagyobb indexe = ", legnagyobb_index(lista))
     print("Párosok száma = ", paros_elem(lista))
