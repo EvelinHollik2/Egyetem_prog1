@@ -16,11 +16,11 @@ def legkisebb(lista:list) -> int:
 
 #visszatér a lista legnagyobb elemének az indexével
 def legnagyobb_index(lista:list)->int:
-    maxi = 0
+    nagyobb = 0
     for i in range(len(lista)):
-        if lista[i] > lista[maxi]:
-            maxi = 1
-    return maxi
+        if lista[i] > lista[nagyobb]:
+            nagyobb = 1
+    return nagyobb
 
 #visszatér a lista páros eleneinek számával
 def paros_elem(lista:list)->int:
@@ -56,6 +56,7 @@ def main():
     print("Legkisebb = ", legkisebb(lista))
     print("Legnagyobb indexe = ", legnagyobb_index(lista))
     print("Párosok száma = ", paros_elem(lista))
+    print("Prim-e:", prim_e(6))
     print("Primek száma = ", primek_szama(lista))
 
 if __name__ == '__main__':
